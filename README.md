@@ -2,9 +2,8 @@
 
 [root@a06afe47321f bin]# ./hbase-daemon.sh start thrift
 starting thrift, logging to /usr/local/hbase/hbase-1.1.2/bin/../logs/hbase--thrift-a06afe47321f.out
-[root@a06afe47321f bin]#
-[root@a06afe47321f bin]#
-[root@a06afe47321f bin]#
+
+# check if started
 [root@a06afe47321f bin]# jps
 1 HMaster
 1493 Jps
@@ -13,11 +12,13 @@ starting thrift, logging to /usr/local/hbase/hbase-1.1.2/bin/../logs/hbase--thri
 [root@a06afe47321f bin]# pwd
 /usr/local/hbase/hbase-1.1.2/bin
 
+## Execution
 
+[root@3b8aeb261c97 hbase]# python3 book.py
+Le titre de livre (ID=2) est : b'Long day'
+La description de livre (ID=2) est : b'Story about Monday'
+---------
+b'2' b'Long day'
+------
+{b'cf_author:fname': b'Emily', b'cf_author:lname': b'Happy', b'cf_book_info:description': b'Story about Monday', b'cf_book_info:title': b'Long day'}
 
-## links
-https://towardsdatascience.com/setting-up-a-standalone-hbase-local-instance-and-connect-to-it-with-python-happybase-9751c9fe6941
-
-
-
-# hbase
